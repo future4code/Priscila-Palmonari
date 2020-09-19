@@ -34,8 +34,8 @@ nav ul{
 nav ul li a{
 	margin: 30px;
 	font-family: myriad pro regular;
-	color: #505050;
-	font-size: 15px;
+	color: #050505;
+	font-size: 25px;
 	font-weight: 700;
 }
 .logo
@@ -52,30 +52,17 @@ nav ul li a{
 }
 
 /* Estilo Textos */
-.conteudo-texto p:nth-child(1)
-{
-	font-family: calibri;
+.conteudo-texto h1{
+	font-family:myriad pro;
 	font-weight: bold;
-	color: #6d6d6d;
+	color: black;
 	font-size: 40px;
-
 }
-
-.conteudo-texto p:nth-child(2)
-{
-	font-family: calibri;
+.conteudo-texto h3{
+	font-family: myriad pro;
 	font-weight: bold;
-	letter-spacing: 1px;
-	color: #000;
+	color: black;
 	font-size: 60px;
-}
-
-.conteudo-texto p:nth-child(3)
-{
-	font-family: myriad pro regular;
-	color: #403e3e;
-	font-size: 30px;
-	line-height: 30px;
 }
 
 .conteudo-texto 
@@ -88,35 +75,8 @@ nav ul li a{
 {
 	position: absolute;
 	left: 13%;
-	top: 42%;
+	top: 18%;
 	transform: translate(-13%, -42%);
-}
-
-.conteudo-texto button
-{
-	width: 130px;
-	height: 42px;
-	border-radius: 10px;
-	font-family: calibri;
-	font-weight: bold;
-	font-size: 14px;
-	outline: none;
-	margin: 0px 10px;
-}
-
-.btn1
-{
-	border: 2px solid #373636;
-	color: #373636;
-
-}
-
-.btn2
-{
-	background-color: #0b0b0b;
-	border: none;
-	color: #ffffff;;
-
 }
 
 button:active
@@ -137,21 +97,30 @@ button:active
 
 }
 
-
-
-
-
-
-
 .conteudo-sobre
 {
-	width: 80%;
+	width: 85%;
 	height:330px;
 	background-color: #ffffff;
 	border-radius: 20px;
 	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 	display: flex;
-	margin: -7% auto 20px auto;
+	margin: -28% auto 20px auto;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+.conteudo-sobre2
+{
+	width: 85%;
+	height:330px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: 2% auto 20px auto;
 	position: relative;
 	justify-content: space-evenly;
 	align-items: center;
@@ -164,47 +133,44 @@ button:active
 	height: 250px;
   
 }
+.conteudo-sobre2 img{
+	height: 250px;
+}
 
 .texto-sobre 
 {
 	width: 550px;
 }
 
-.cotexto-sobre  p:nth-child(1)
-{
+.texto-sobre p{
+ 
 	color: #403e3e;
-	font-family: myriad pro;
+	font-family:myriad pro;
 	font-weight: bold;
 	font-size: 23px;
-	line-height: 0px;
+	line-height: 25px;
 
 }
 
-.texto-sobre  p:nth-child(2)
-{
-	color: #3e3e3e;
-	font-size: 13px;
-	font-family: myriad pro;
-	font-weight: bold;
-	line-height: 5px;
-}
-
-.texto-sobre p:nth-child(3),
-.texto-sobre p:nth-child(4)
-{
-	color: #7e7d7d;
-	font-family: calibri;
-	font-size: 16px;
-}
-
-.texto-sobre button
+/*.texto-sobre button
 {
 	width: 120px;
 	height: 40px;
 	color: #ffffff;
 	outline: none;
 	border:none;
-	font-family: calibri;
+	font-family:myriad pro ;
+	font-size: large;
+	background-color: #262525;
+}*/
+input[type=button]
+{   width: 120px;
+	height: 40px;
+	color: #ffffff;
+	outline: none;
+	border:none;
+	font-family:myriad pro ;
+	font-size: large;
 	background-color: #262525;
 }
 
@@ -215,50 +181,25 @@ button:active
 {
 	height: 600px;
 	background-color: #ffffff;
+	padding: 100px;
 
 }
 
-.servicos-textos p:nth-child(1)
-{
-	font-family: calibri;
+.servicos-textos h1{
+	font-family:myriad pro;
 	font-weight: bold;
-	color: #3e3d3d;
-	font-size:30px;
-	line-height: 0px;
-
-}
-
-.servicos-textos p:nth-child(2)
-{
-	font-family: calibri;
-	font-weight: bold;
-	color: #3e3d3d;
-	font-size:15px;
-	line-height: 5px;
-
-}
-
-.servicos-textos p:nth-child(3)
-{
-	font-family: calibri;
-	color: #7e7d7d;
-	
-}
-
- .servicos-textos
-{
-	width: 500px;
-	margin: 50px 0px 0px 50px;
+	color: black;
+	font-size: 40px;
 	
 }
 
 .box1, .box2, .box3, .box4
 {
 	width: 300px;
-	height: 320px;
+	height: 450px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
 	display: flex;
 	justify-content: center;
 	align-items:  center;
@@ -269,7 +210,8 @@ button:active
 .conteudo-box 
 {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	
     margin-left: 50px;
     margin-right: 50px;
 	
@@ -310,7 +252,7 @@ button:active
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: calibri;
+	font-family: myriad pro;
 	font-weight: bold;
 	margin-top: 10px;
 	
@@ -322,7 +264,7 @@ button:active
 .box4 p:nth-child(2)
 {
 	color: #ffffff;
-	font-family: calibri;
+	font-family: myriad pro;
 	font-size: 23px;
 	line-height: 0px;
 }
@@ -332,7 +274,7 @@ button:active
 .box3 p:nth-child(3),
 .box4 p:nth-child(3)
 {
-	font-family: calibri;
+	font-family: myriad pro;
 	text-align: center;
 	width: 250px;
 	color: #8f8f8f;
@@ -377,7 +319,7 @@ button:active
 {
 	color: #ffffff;
 	font-size: 30px;
-	font-family: calibri;
+	font-family: myriad pro;
 	font-weight: bold;
 	border-bottom: 2px solid #ffffff;
 }
@@ -389,8 +331,9 @@ button:active
 	background-color: #ffffff;
 	outline: none;
 	border:none;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
+	font-family: myriad pro;
 }
 
 /* Seção footer */
@@ -407,7 +350,7 @@ footer
 
 footer p
 {
-	font-family: calibri;
+	font-family: myriad pro;
 }
 
 footer p:nth-child(1)
