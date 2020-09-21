@@ -14,6 +14,10 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+    font-size: xx-large;
+}
+h3{
+    font-size: x-large;
 }
 
 input {
@@ -33,9 +37,9 @@ div>p:first-child {
     display: inline;
 }
 
-div img {
+/*div img {
     background: black;
-}
+}*/
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -73,11 +77,10 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding: 100px;
 }
 
-#container-de-descricao>ol {
-    padding: 15px 0px;
-}
+
 
 #container-para-comprar {
     background-color: #e7eb90;
