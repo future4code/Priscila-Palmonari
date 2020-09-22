@@ -1,12 +1,10 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
-.img {
-    max-width:250px;
+.img{
+    max-width:350px;
     max-height:150px;
     width: auto;
     height: auto;
-    background: #069;
-   
 }
 .center{
 max-width: 1100px;
@@ -31,8 +29,9 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
-
+    background-color: #069;
 }
+
 h4{
     background-color: #069;
     text-align: center;
@@ -72,4 +71,18 @@ div.form .input_text {
     border-top: 1px double #171717;
     border-left:1px double #333333;
     border-right:1px double #333333;
+}
+
+.fLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.social-icons {
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
 }
