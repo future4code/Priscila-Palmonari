@@ -1,0 +1,17 @@
+#nivel1 {
+    display: flex;
+  justify-content: flex-end;
+  }
+
+#nivel2 {
+    display: flex;
+  justify-content: center;
+  }
+#nivel3 {
+    display: flex;
+  justify-content:space-around ;
+  }
+#nivel4 {
+    display: flex;
+  justify-content: space-between;
+  }
