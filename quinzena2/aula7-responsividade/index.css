@@ -1,0 +1,59 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: rgb(250, 243, 243);
+}
+
+div {
+    border: 1px solid black;
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 5fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    
+}
+
+#first-block {
+    background-color: red;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+   
+    
+
+}
+
+.blue-block {
+    background-color: blue;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+}
+
+.yellow-block {
+    background-color: yellow;
+}
+
+.green-block {
+    background-color: green;
+    height: 100px;
+}
+
+.black-block {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.white-block {
+    height: 100px;
+    background-color: white;
+}
