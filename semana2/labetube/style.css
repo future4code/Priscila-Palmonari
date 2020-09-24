@@ -1,0 +1,31 @@
+*{ margin: 0;}
+
+header {
+    display: flex;
+    width: 150%;
+    position: fixed;
+    text-align: left;
+    font-size: 40px;
+    color: rgb(14, 13, 13);
+    background-color: orange
+}
+#container{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 3em;
+    gap: 1em;
+}
+section{
+    align-items: center;
+    justify-items: center;
+    border: 1px solid black;
+    display: grid;
+    margin: 0 auto;
+   
+}
+.foto{
+   width: 380px;
+   height: 330px;
+}
