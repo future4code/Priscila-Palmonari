@@ -1,0 +1,7 @@
+var n ant - inteiro
+escreva("Digite um numero")
+leia n
+
+ant = n-1
+
+escreva("O antecessor é:" ant)

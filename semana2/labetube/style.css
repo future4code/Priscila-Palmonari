@@ -2,12 +2,10 @@
 
 header {
     display: flex;
-    width: 150%;
-    position: fixed;
-    text-align: left;
-    font-size: 40px;
+    justify-content: space-between;
+    font-size: 70px;
     color: rgb(14, 13, 13);
-    background-color: orange
+    background-color: rgb(6, 130, 139);
 }
 #container{
     display: grid;
@@ -20,12 +18,30 @@ header {
 section{
     align-items: center;
     justify-items: center;
-    border: 1px solid black;
+    border: 0.5px solid black;
     display: grid;
     margin: 0 auto;
-   
 }
 .foto{
    width: 380px;
    height: 330px;
+}
+#main-pgvideo{
+    display: flex;
+    justify-content: center;
+    
+}
+.pgvideo{
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+}
+footer{
+   
+   text-align: center;
+   font-size: 30px;
+   color: black;
+   padding: 50px;
+   background-color: rgb(6, 130, 139);
+
 }
