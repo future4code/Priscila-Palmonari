@@ -12,7 +12,7 @@
     padding: 10px 0;
     flex-grow: 1;
     cursor: pointer;
-    transition: all .4s;
+    transition: all .7s;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 120%;
@@ -73,7 +73,7 @@
     overflow: hidden;
 }
 .sections{
-    transition: all .4s;
+    transition: all .7s;
 }
 #servico:checked ~ .sections{
     margin-top: -100vh;
