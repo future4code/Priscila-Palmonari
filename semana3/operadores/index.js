@@ -87,11 +87,12 @@ const F = (Number(C)) * 9/5 + 32
 const K = Number(C) + 273
 console.log(F,K)*/
 
-/*2
+
 const consumo = 280
 const quilowattHora = 280 * 0.05
-const desconto = quilowattHora - (quilowattHora * 15/100)
-console.log("O valor a ser pago é: ",desconto)*/
+const d = quilowattHora - (quilowattHora * 15/100)
+const valorpago = quilowattHora - d
+console.log("O valor do desconto é : ",valorpago)
 
 /*3)
 const lb = 20
@@ -122,7 +123,16 @@ console.log("O valor em m é: ",l)*/
 const l = Number(xic) * 0.24
 console.log("O valor em m é: ",l)*/
 
+/*const ensino = prompt("Voce concluiu o ensino medio?")
+const idade = Number(prompt("Qual sua idade?"))
+const facul = prompt("Vc esta cursando outra facul?")
 
+if ((ensino === 'sim') && (idade >=18) && (facul === 'nao')){
+    console.log("Voce pode entrar na nossa facul")
+}
+else{
+    console.log("Nem pode :/")
+}*/
 
 
 
