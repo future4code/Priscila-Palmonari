@@ -98,10 +98,130 @@ switch (categoria) {
       console.log("Valor do ingresso: ",valorIngressoDO)
       console.log("Valor total: ",valorIngresso)
     }
+    if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
+      const valorIngressoDO = 660
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Doméstico') && (etapa === 'FI')){
+      const valorIngressoDO = 1980
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'SF')){
+      const valorIngressoDO = 5412
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'DT')){
+      const valorIngressoDO = 2706
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'FI')){
+      const valorIngressoDO = 8118
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
     break;
   case 2:
       if((tipoJogo === 'Doméstico') && (etapa === 'SF')){
         const valorIngressoDO = 880
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
+        const valorIngressoDO = 440
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Doméstico') && (etapa === 'FI')){
+        const valorIngressoDO = 1320
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'SF')){
+        const valorIngressoDO = 3608
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'DT')){
+        const valorIngressoDO = 1804
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'FI')){
+        const valorIngressoDO = 5412
         valorIngresso = qtdIngresso * valorIngressoDO
       
         console.log("Nome Completo: ",nomeCompleto)
@@ -126,6 +246,66 @@ switch (categoria) {
         console.log("Valor do ingresso: ",valorIngressoDO)
         console.log("Valor total: ",valorIngresso)
       }
+      if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
+        const valorIngressoDO = 330
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Doméstico') && (etapa === 'FI')){
+        const valorIngressoDO = 880
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'SF')){
+        const valorIngressoDO = 2255
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'DT')){
+        const valorIngressoDO = 1353
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
+      if((tipoJogo === 'Internacional') && (etapa === 'FI')){
+        const valorIngressoDO = 3608
+        valorIngresso = qtdIngresso * valorIngressoDO
+      
+        console.log("Nome Completo: ",nomeCompleto)
+        console.log("Tipo de jogo: ",tipoJogo)
+        console.log("Etapa do jogo: ",etapa)
+        console.log("Categoria: ",categoria)
+        console.log("Qtd de ingressos: ",qtdIngresso)
+        console.log("Valor do ingresso: ",valorIngressoDO)
+        console.log("Valor total: ",valorIngresso)
+      }
       break;
   case 4:
     if((tipoJogo === 'Doméstico') && (etapa === 'SF')){
@@ -140,64 +320,68 @@ switch (categoria) {
       console.log("Valor do ingresso: ",valorIngressoDO)
       console.log("Valor total: ",valorIngresso)
     }
+    if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
+      const valorIngressoDO = 170
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Doméstico') && (etapa === 'FI')){
+      const valorIngressoDO = 330
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'SF')){
+      const valorIngressoDO = 902
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'DT')){
+      const valorIngressoDO = 697
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
+    if((tipoJogo === 'Internacional') && (etapa === 'FI')){
+      const valorIngressoDO = 1353
+      valorIngresso = qtdIngresso * valorIngressoDO
+    
+      console.log("Nome Completo: ",nomeCompleto)
+      console.log("Tipo de jogo: ",tipoJogo)
+      console.log("Etapa do jogo: ",etapa)
+      console.log("Categoria: ",categoria)
+      console.log("Qtd de ingressos: ",qtdIngresso)
+      console.log("Valor do ingresso: ",valorIngressoDO)
+      console.log("Valor total: ",valorIngresso)
+    }
     break;
 
-  case 1:
-      if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
-        const valorIngressoDO = 660
-        valorIngresso = qtdIngresso * valorIngressoDO
-      
-        console.log("Nome Completo: ",nomeCompleto)
-        console.log("Tipo de jogo: ",tipoJogo)
-        console.log("Etapa do jogo: ",etapa)
-        console.log("Categoria: ",categoria)
-        console.log("Qtd de ingressos: ",qtdIngresso)
-        console.log("Valor do ingresso: ",valorIngressoDO)
-        console.log("Valor total: ",valorIngresso)
-      }
-      break;
-  case 2:
-        if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
-          const valorIngressoDO = 440
-          valorIngresso = qtdIngresso * valorIngressoDO
-        
-          console.log("Nome Completo: ",nomeCompleto)
-          console.log("Tipo de jogo: ",tipoJogo)
-          console.log("Etapa do jogo: ",etapa)
-          console.log("Categoria: ",categoria)
-          console.log("Qtd de ingressos: ",qtdIngresso)
-          console.log("Valor do ingresso: ",valorIngressoDO)
-          console.log("Valor total: ",valorIngresso)
-        }
-        break;
-  case 3:
-        if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
-          const valorIngressoDO = 330
-          valorIngresso = qtdIngresso * valorIngressoDO
-        
-          console.log("Nome Completo: ",nomeCompleto)
-          console.log("Tipo de jogo: ",tipoJogo)
-          console.log("Etapa do jogo: ",etapa)
-          console.log("Categoria: ",categoria)
-          console.log("Qtd de ingressos: ",qtdIngresso)
-          console.log("Valor do ingresso: ",valorIngressoDO)
-          console.log("Valor total: ",valorIngresso)
-        }
-        break;
-  case 4:
-      if((tipoJogo === 'Doméstico') && (etapa === 'DT')){
-        const valorIngressoDO = 170
-        valorIngresso = qtdIngresso * valorIngressoDO
-      
-        console.log("Nome Completo: ",nomeCompleto)
-        console.log("Tipo de jogo: ",tipoJogo)
-        console.log("Etapa do jogo: ",etapa)
-        console.log("Categoria: ",categoria)
-        console.log("Qtd de ingressos: ",qtdIngresso)
-        console.log("Valor do ingresso: ",valorIngressoDO)
-        console.log("Valor total: ",valorIngresso)
-      }
-      break;
     default:
     console.log("Essa categoria nao existe")
     break;
