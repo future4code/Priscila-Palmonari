@@ -77,6 +77,7 @@ else{
   console.log("Escola outro filme")
 }*/
 
+/*2)
 const nomeCompleto = prompt("Digite seu nome completo: ")
 const tipoJogo = prompt("Digite o tipo de jogo IN para internacional e DO para doméstico: ")
 const etapa = prompt("Digite a etapa SF Semi-final;DT decisao do terciro lugar e FI Fianl")
@@ -385,7 +386,7 @@ switch (categoria) {
     default:
     console.log("Essa categoria nao existe")
     break;
-}
+}*/
 
 
 /*if((tipoJogo === 'Doméstico') && (categoria === 1) && (etapa === 'SF')){
@@ -436,3 +437,31 @@ else if ((tipoJogo === 'Doméstico') && (categoria === 4) && (etapa === 'SF')){
   console.log("Valor do ingresso: ",valorIngressoDO)
   console.log("Valor total: ",valorIngresso)
 }*/
+
+/*let array =  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+for( i = 0; array[i] <=14; i++){
+  console.log(array)
+}*/
+
+/*let array =  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+array.push(16)
+console.log(array)*/
+
+/*let array =  ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
+console.log(array)*/
+
+/*let i = 0
+while(i < 10){
+  console.log(i)
+  i++
+}*/
+let soma = 0
+let num 
+
+while( num !== 0){
+  num = Number(prompt("Digite um número: "))
+  soma = soma + num
+  
+}
+console.log(soma)
