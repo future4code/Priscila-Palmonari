@@ -456,12 +456,3 @@ while(i < 10){
   console.log(i)
   i++
 }*/
-let soma = 0
-let num 
-
-while( num !== 0){
-  num = Number(prompt("Digite um número: "))
-  soma = soma + num
-  
-}
-console.log(soma)
