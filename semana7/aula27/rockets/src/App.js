@@ -20,9 +20,7 @@ class App extends React.Component {
   fetchRocket = () => {
     const apiUrl = 'https://api.spacexdata.com/v3/rockets';
     axios.get(apiUrl).then((response) => {
-      // handle success
-      this.setState({ rocketList: response.data });
- 
+      this.setState({ rocketList: response.data});
     });
   };
 
@@ -30,12 +28,9 @@ class App extends React.Component {
     console.log("SELECIONOU ALGO", event.target.value);
     const apiUrl = `https://api.spacexdata.com/v3/rockets/${event.target.value}`;
     axios.get(apiUrl).then((response) => {
-      // handle success
       console.log("RESPOSTA ROCKET", response.data);
-    
 
-      this.setState({
-        selectedRocketUrl: response.data.flickr_images});
+      this.setState({selectedRocketUrl: response.data.flickr_images});
     });
   };
 
