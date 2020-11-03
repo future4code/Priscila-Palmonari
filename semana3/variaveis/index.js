@@ -71,9 +71,10 @@ console.log('Qual sua comida preferida??')
 comidas[1] = "tabule"
 console.log(comidas)*/
 
-/*4
+
 let perguntas = ['Vc gosta de estudar na Labenu?','Os professores explicam bem??','Eles são bem humorados??']
 let respostas = [ true,true,true]
 console.log(perguntas[0],respostas[0])
 console.log(perguntas[1],respostas[1])
-console.log(perguntas[2],respostas[2])*/
+console.log(perguntas[2],respostas[2])
+

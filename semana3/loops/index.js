@@ -20,16 +20,26 @@ for (let i = 0; i < array.length; i++ ){
         console.log(elemento)
 }*/
 
-/*
-const array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
-for (let i = 0; i < array.length; i++ ){
+
+const array = []
+for (let i = 0; i < 100; i++ ){
         if(array[i]%2 === 0 ){
             let elemento = array[i]
-            console.log(elemento)
+            console.log("patata")
 
         }
+}
+/*const array = []
+for (let i = 0; i < array.length; i++ ){
+        if(array[i]%2 === 0 ){
+            console.log("Patati")
+        } else if(array[i]%7 === 0){
+            console.log("Patata")
+        } else if(array[i]%2 === 0 && array[i]%7 === 0){
+            console.log("PATATIPATATA")
+        }
+        
 }*/
-
 /*
 const array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 let novo =[]
