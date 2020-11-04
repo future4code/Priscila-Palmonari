@@ -52,7 +52,6 @@ switch(turno){
   break
 }*/
 
-/*7)
 const genero = prompt("Qual genero de filme vaia assistir??: ")
 const preco = Number(prompt("Qual o preço do ingresso??: "))
 
@@ -61,7 +60,7 @@ if((genero === 'Fantasia') && (preco < 15)){
 }
 else{
   console.log("Escola outro filme")
-}*/
+}
 
 
 // DESAFIOS
