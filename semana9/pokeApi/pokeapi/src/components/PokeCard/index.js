@@ -7,11 +7,8 @@ export default function PokeCard(props) {
     const [pokemon, setpokemon] = useState([])
 
     useEffect(() =>{
-        pegaPokemon(pokemon)
-        if(pokemon !== pokemon){
-            pegaPokemon(pokemon)
-        }
-    },[])
+        pegaPokemon(props.pokemon)
+    },[props.pokemon])
 
      const pegaPokemon = (pokeName) =>{
         axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
