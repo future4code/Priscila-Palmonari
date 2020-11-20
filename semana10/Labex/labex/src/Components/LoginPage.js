@@ -54,7 +54,7 @@ function LoginPage() {
     const token = localStorage.getItem("token")
 
     if (token) {
-      history.push("/tripDetailsPage")
+      history.push("/ADMTripList")
     }
 
   },[history])
@@ -68,7 +68,7 @@ function LoginPage() {
     axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/priscila-dumont/login",body)
     .then((response) =>{
       localStorage.setItem("token",response.data.token)
-      history.push("/tripDetailsPage")
+      history.push("/ADMTripList")
     })
     .catch((error) =>{
       console.log(error)

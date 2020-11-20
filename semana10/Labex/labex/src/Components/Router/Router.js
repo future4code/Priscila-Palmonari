@@ -6,7 +6,8 @@ import Trips from "../Trips";
 import FormSubscription from "../FormSubscripton";
 import CreateTrips from "../CreateTrips";
 import ListTripsPage from "../ListTripsPage";
-import TripDetailsPage from "../TripDetailsPage";
+import ADMTripList from "../ADMTripList";
+import ADMTripsDetails from "../ADMTripsDetails"
 
 
 
@@ -14,11 +15,12 @@ function Router() {
   return (
     <BrowserRouter>
     <Switch>
+
       <Route exact path ="/">
         <Trips/>
       </Route>
 
-      <Route exact path ="/formSubscription">
+      <Route exact path ="/formSubscription/:id">
         <FormSubscription/> 
       </Route>
 
@@ -34,8 +36,12 @@ function Router() {
         <ListTripsPage/>
       </Route>
 
-      <Route exact path = "/tripDetailsPage">
-        <TripDetailsPage/>
+      <Route exact path = "/ADMTripList/">
+        <ADMTripList/>
+      </Route>
+
+      <Route exact path= "/ADMTripsDetails/:tripId">
+        <ADMTripsDetails/>
       </Route>
 
     </Switch>

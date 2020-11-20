@@ -6,7 +6,7 @@ import React from "react"
 function CreateTrips() {
   return (
     <div>
-      <button>CreateTrips</button>
+      <h1>Criar Viagens</h1>
     </div>
   );
 }
