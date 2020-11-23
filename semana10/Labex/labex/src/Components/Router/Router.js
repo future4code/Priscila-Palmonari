@@ -5,9 +5,9 @@ import LoginPage from "../LoginPage"
 import Trips from "../Trips";
 import FormSubscription from "../FormSubscripton";
 import CreateTrips from "../CreateTrips";
-import ListTripsPage from "../ListTripsPage";
+
 import ADMTripList from "../ADMTripList";
-import ADMTripsDetails from "../ADMTripsDetails"
+import ADMTripsDetails from "../ADMTripDetails/ADMTripsDetails"
 
 
 
@@ -30,10 +30,6 @@ function Router() {
 
       <Route exact path = "/createTrips">
         <CreateTrips/>
-      </Route>
-
-      <Route exact path = "/listTrips">
-        <ListTripsPage/>
       </Route>
 
       <Route exact path = "/ADMTripList/">

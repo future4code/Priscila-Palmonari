@@ -9,9 +9,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-
-
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { useHistory } from "react-router-dom";
 import { useRequestData } from '../Hooks/useRequestData';
 import styled from "styled-components";
@@ -32,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
   },
   root1: {
     maxWidth: 345,
-    margin: theme.spacing(2),
+    margin: theme.spacing(1),
+    
   },
   chip: {
     margin: theme.spacing(0.5),
@@ -52,7 +51,6 @@ function Trips() {
 
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -74,7 +72,7 @@ function Trips() {
   const list = getTrips && getTrips.trips.map((trip, i) => {
     return (
       <div>
-        <Card className={classes.root1}>
+        <Card className={classes.root1} key={trip.id}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -119,10 +117,11 @@ function Trips() {
           textColor="primary"
           centered
         >
-          <Tab label="Login" onClick={goToLoginPage} />
+          <Tab label="Área do Administrador" onClick={goToLoginPage} />
         </Tabs>
       </Paper>
       <CardViagens>
+        <h1>Escolha a sua Viagem</h1>
       {list}
       </CardViagens>
       

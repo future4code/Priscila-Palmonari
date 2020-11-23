@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import { useHistory, useParams } from "react-router-dom";
-
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Chip from '@material-ui/core/Chip';
-import Grid from '@material-ui/core/Grid';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
+import { TextField, Button } from '@material-ui/core';
+import styled from "styled-components";
+
+const FormContainer = styled.form`
+  display: grid;
+  gap: 16px;
+  justify-content:center;
+  text-align: center; 
+  margin-top: 50px;
+`
 
 
 const useStyles = makeStyles((theme) => ({
@@ -50,7 +54,6 @@ function FormSubscription() {
   };
 
   const history = useHistory()
-
   const goBackToTrips = () => {
     history.goBack()
   }
@@ -60,7 +63,6 @@ function FormSubscription() {
   }
 
   const { id } = useParams()
-
   const { form, onChange } = useForm({ name: "", age: "", profession: "", country: "", applicationText: "" })
 
   const handleInputChange = event => {
@@ -76,15 +78,13 @@ function FormSubscription() {
       .post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/priscila-dumont/trips/${id}/apply`, form)
       .then(response => {
         console.log(response)
-        alert("Candidatura envida com SUCESSO",response.data.message)
+        alert("Candidatura envida com SUCESSO", response.data.message)
       })
       .catch(e => {
         console.log(e)
-        alert("TODOS OS CAMPOS SÃO OBRIGATÓRIOS!!Verifique se os preencheu corretamente!",e)
+        alert("TODOS OS CAMPOS SÃO OBRIGATÓRIOS!!Verifique se os preencheu corretamente!", e)
       })
   }
-
-
 
   return (
     <div>
@@ -96,67 +96,64 @@ function FormSubscription() {
           textColor="primary"
           centered
         >
-          <Tab label="Login" onClick={goToLoginADM} />
-          <Tab label="Viagens" onClick={goBackToTrips} />
+          <Tab label="Área do Administrador" onClick={goToLoginADM} />
+          <Tab label="Escolher Viagens" onClick={goBackToTrips} />
         </Tabs>
       </Paper>
-
-      <div>
-        <form className={classes.root1} noValidate autoComplete="off" >
-          <div>
-            <h1>Formulário de Candidatura</h1>
-            <TextField 
-            required 
+      <FormContainer className={classes.root1} noValidate autoComplete="off" onSubmit={handleSubmit} >
+        <div>
+          <h1>Formulário de Candidatura</h1>
+          <TextField
+            required
             name="name"
             value={form.name}
             pattern="[A-Za-z ]{3,}"
-            label="Digite seu Nome:" 
+            label="Digite seu Nome:"
             type="text"
             onChange={handleInputChange} />
-            <br />
+          <br />
 
-            <TextField 
+          <TextField
             required
             name="age"
             value={form.age}
             min="18"
-            label="Digite sua Idade:" 
-            type="number" 
-            onChange={handleInputChange}/>
-            <br />
+            label="Digite sua Idade:"
+            type="number"
+            onChange={handleInputChange} />
+          <br />
 
-            <TextField
-            required 
+          <TextField
+            required
             name="profession"
             value={form.profession}
-            label="Profissão:" 
+            label="Profissão:"
             type="text"
             onChange={handleInputChange} />
-            <br />
+          <br />
 
-            <TextField 
+          <TextField
             required
             name="country"
             value={form.country}
-            label="País:" 
-            type="text" 
-            onChange={handleInputChange}/>
-            <br />
+            label="País:"
+            type="text"
+            onChange={handleInputChange} />
+          <br />
 
-            <TextField 
+          <TextField
             required
             name="applicationText"
             value={form.text}
             pattern="[A-Za-z ]{30,}"
-            label="Por que quer ir a esta VIAGEM?" 
-            type="text" 
-            onChange={handleInputChange}/>
-            <br />
-
-            <Chip className={classes.chip} color="primary" label="Enviar Candidatura" type='submit' onClick={handleSubmit} />
-          </div>
-        </form>
-      </div>
+            label="Texto de Candidatura"
+            helperText="Explique pq quer ir nessa viagem"
+            type="text"
+            onChange={handleInputChange} />
+          <br />
+          <Button variant={'contained'} color={'primary'} type={'submit'}>Enviar Candidatura</Button>
+        </div>
+      </FormContainer>
     </div>
 
   );

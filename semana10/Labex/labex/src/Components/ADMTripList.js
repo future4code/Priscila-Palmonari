@@ -1,17 +1,23 @@
 import React from "react"
 import { useProtectedPage } from "../Hooks/useProtectedPage";
-import { Button, List, ListItem, ListItemText,} from '@material-ui/core'
+import { Button, List, ListItem, ListItemText, ListItemLink } from '@material-ui/core'
 import { useTripsList } from '../Hooks/useTripsList'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import styled from "styled-components";
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
 
-
-export const TripsListPageContainer = styled.div`
+const TripsListPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+
+  a{
+    text-decoration: none;
+    color: black;
+
+  }
 `
 
 const useStyles = makeStyles((theme) => ({
@@ -35,29 +41,26 @@ function TripDetailsPage() {
     history.push("/createTrips")
   }
 
-  const goToDetailsTrips = (id) => {
-    history.push(`/ADMTripsDetails/${id}`)
-  }
-
+  return <TripsListPageContainer>
+  <h1>Lista de Viagens</h1>
+  
+    <Link to={'/createTrips'}>
+    <Button variant={'contained'} color={'primary'}>Criar viagem</Button>
+     </Link><br/><br/>
   
 
-  return <TripsListPageContainer>
-    <h1>Lista de Viagens</h1>
-    
-      <Button variant={'contained'} color={'primary'} onClick={goToCreateTrip}>Criar viagem</Button>
-    
-
-    <List component="nav" >
-      {trips.map((trip) => {
-        return <h3 key={trip.id}>
-            <ListItem button divider>
-             <ListItemText primary={trip.name} /><br/><br/>
-             <button onClick={goToDetailsTrips}>Detalhes</button>
-           </ListItem>
-        </h3>
-      })}
-    </List>
-  </TripsListPageContainer>
+  <List component="nav">
+    {trips.map((trip) => {
+      return <Link to={`/ADMTripsDetails/${trip.id}`}>
+        <ListItem button>
+          <ListItemText primary={trip.name} />
+        </ListItem>
+        <Divider/>
+      </Link>
+      
+    })}
+  </List>
+</TripsListPageContainer>
 }
 
 
