@@ -14,7 +14,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.fetchRocket();
+    this.fetchRockett();
   }
 
   fetchRocket = () => {
